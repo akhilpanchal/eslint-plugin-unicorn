@@ -4,7 +4,7 @@
 
 > Various awesome ESLint rules
 
-You might want to check out [XO](https://github.com/sindresorhus/xo), which includes this plugin.
+You might want to check out [XO](https://github.com/xojs/xo), which includes this plugin.
 
 
 ## Install
@@ -44,15 +44,17 @@ Configure it in `package.json`.
 			"unicorn/no-array-instanceof": "error",
 			"unicorn/no-new-buffer": "error",
 			"unicorn/no-hex-escape": "error",
-			"unicorn/custom-error-definition": "error",
+			"unicorn/custom-error-definition": "off",
 			"unicorn/prefer-starts-ends-with": "error",
 			"unicorn/prefer-type-error": "error",
-			"unicorn/no-fn-reference-in-iterator": "error",
+			"unicorn/no-fn-reference-in-iterator": "off",
 			"unicorn/import-index": "error",
 			"unicorn/new-for-builtins": "error",
 			"unicorn/regex-shorthand": "error",
 			"unicorn/prefer-spread": "error",
-			"unicorn/error-message": "error"
+			"unicorn/error-message": "error",
+			"unicorn/no-unsafe-regex": "off",
+			"unicorn/prefer-add-event-listener": "error"
 		}
 	}
 }
@@ -81,6 +83,8 @@ Configure it in `package.json`.
 - [regex-shorthand](docs/rules/regex-shorthand.md) - Enforce the use of regex shorthands to improve readability. *(fixable)*
 - [prefer-spread](docs/rules/prefer-spread.md) - Prefer the spread operator over `Array.from()`. *(fixable)*
 - [error-message](docs/rules/error-message.md) - Enforce passing a `message` value when throwing a built-in error.
+- [no-unsafe-regex](docs/rules/no-unsafe-regex.md) - Disallow unsafe regular expressions.
+- [prefer-add-event-listener](docs/rules/prefer-add-event-listener.md) - Prefer `addEventListener` over `on`-functions. *(fixable)*
 
 
 ## Recommended config
@@ -112,6 +116,7 @@ See the [ESLint docs](http://eslint.org/docs/user-guide/configuring#extending-co
 - [James Talmage](https://github.com/jamestalmage)
 - [Jeroen Engels](https://github.com/jfmengels)
 - [Sam Verschueren](https://github.com/SamVerschueren)
+- [John Wu](https://github.com/johnwu93)
 
 
 ## License
